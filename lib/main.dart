@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wanandroid/common/constants.dart';
+import 'package:wanandroid/page/home_page.dart';
 import 'package:wanandroid/page/splash_page.dart';
 
 void main() {
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         Pages.SPLASH_PAGE: (context) => SplashPage(),
+        Pages.HOME_PAGE: (context) => HomePage(),
       },
       initialRoute: Pages.SPLASH_PAGE,
     );

@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:wanandroid/common/constants.dart';
 
 ///
 /// 闪屏页
 ///
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
+  @override
+  _SplashPageState createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(Duration(seconds: Constants.SPLASH_TIME))
+        .then((value) => Navigator.pushNamed(context, Pages.HOME_PAGE));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
