@@ -14,7 +14,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: Constants.SPLASH_TIME))
-        .then((value) => Navigator.pushNamed(context, Pages.HOME_PAGE));
+        .then((value) => Navigator.pushNamed(context, Pages.MAIN_PAGE));
   }
 
   @override

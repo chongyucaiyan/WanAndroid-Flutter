@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 ///
-/// 首页
+/// 导航页
 ///
-class HomePage extends StatefulWidget {
+class NavigationPage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _NavigationPageState createState() => _NavigationPageState();
 }
 
-class _HomePageState extends State<HomePage>
+class _NavigationPageState extends State<NavigationPage>
     with AutomaticKeepAliveClientMixin {
   @override
   void initState() {
     super.initState();
-    print('initState(), 首页');
+    print('initState(), 导航页');
   }
 
   @override
@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage>
     super.build(context);
     return Center(
       child: Text(
-        '首页',
+        '导航',
       ),
     );
   }

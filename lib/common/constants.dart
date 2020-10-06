@@ -10,5 +10,5 @@ class Constants {
 ///
 class Pages {
   static const SPLASH_PAGE = 'splash_page';
-  static const HOME_PAGE = 'home_page';
+  static const MAIN_PAGE = 'main_page';
 }

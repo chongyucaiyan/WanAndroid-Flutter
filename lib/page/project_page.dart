@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 ///
-/// 首页
+/// 项目页
 ///
-class HomePage extends StatefulWidget {
+class ProjectPage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _ProjectPageState createState() => _ProjectPageState();
 }
 
-class _HomePageState extends State<HomePage>
+class _ProjectPageState extends State<ProjectPage>
     with AutomaticKeepAliveClientMixin {
   @override
   void initState() {
     super.initState();
-    print('initState(), 首页');
+    print('initState(), 项目页');
   }
 
   @override
@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage>
     super.build(context);
     return Center(
       child: Text(
-        '首页',
+        '项目',
       ),
     );
   }
