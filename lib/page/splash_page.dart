@@ -13,8 +13,8 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: Constants.SPLASH_TIME))
-        .then((value) => Navigator.pushNamed(context, Pages.MAIN_PAGE));
+    Future.delayed(Duration(seconds: Constants.SPLASH_TIME)).then(
+        (value) => Navigator.pushReplacementNamed(context, Pages.MAIN_PAGE));
   }
 
   @override
