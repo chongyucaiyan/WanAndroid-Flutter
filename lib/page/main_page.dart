@@ -27,6 +27,14 @@ class _MainPageState extends State<MainPage> {
     ProjectPage(),
   ];
 
+  final List<String> _titleList = [
+    'WanAndroid',
+    '体系',
+    '公众号',
+    '导航',
+    '项目',
+  ];
+
   @override
   void dispose() {
     super.dispose();
@@ -37,7 +45,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('WanAndroid'),
+        title: Text(_titleList[_currentIndex]),
       ),
       body: PageView.builder(
         controller: _pageController,
